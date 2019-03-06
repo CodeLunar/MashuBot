@@ -19,7 +19,7 @@ When you type the command, "!mashu help", it will display the following commands
  - !mashu headpat
  - !mashu servant (insert firstname/nickname/id)
  - !mashu battle
- - !mashu sad
+ - !mashu bad
  - !mashu money
 
 (README will be updated as i make progress)
