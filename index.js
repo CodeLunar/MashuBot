@@ -74,27 +74,26 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                 to: channelID,
                 message: 'Thank you! Oh, this just makes me so happy! I don\'t think I\'ll ever forget this feeling!'
             })
-        } else if (cmd[0] == 'sad'){
+        } else if (cmd[0] == 'bad') {
             bot.sendMessage({
                 to: channelID,
                 message: 'I\'m...sorry...'
             })
-        } else if (cmd[0] == 'money'){
+        } else if (cmd[0] == 'money') {
             bot.sendMessage({
                 to: channelID,
                 message: 'Ka-ching, ka-ching...Huh!? I\'m fine. I wasn\'t playing with valuable resources. I swear,'
             })
-        }else if (cmd[0] == 'battle'){
+        } else if (cmd[0] == 'battle') {
             bot.sendMessage({
                 to: channelID,
                 message: 'Time for battle. Senpai, your command!' 
             })
-        }else if (cmd[0] == 'servant' && cmd[1] != null) {
+        } else if (cmd[0] == 'servant' && cmd[1] != null) {
             // cmd[1] = string 
             let servants = JSON.parse(fs.readFileSync('./main/servants.json', 'utf8'));
-            
             for (let i = 0; i< Object.keys(servants).length; i++) {    
-                if (cmd[1] == servants[i].fname || cmd[1] == servants[i].id || cmd[1] + cmd[2] == servants[i].fname || cmd[1] == servants[i].nick || cmd[1] + cmd[2] == servants[i].nick){
+                if (cmd[1] + ' ' + cmd[2] == servants[i].fname || cmd[1] + ' ' + cmd[2] == servants[i].nick || cmd[1] == servants[i].fname || cmd[1] == servants[i].id ||  cmd[1] == servants[i].nick) {
                     bot.sendMessage({
                         to: channelID,
                         message: 'Senpai, this is the servant you requested: \n'+'``` ID: ' +servants[i].id+
@@ -112,6 +111,25 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                                 '\n Gender: ' +servants[i].gender+
                                 '\n NP: ' +servants[i].np+ '```'
                     });
+                    break;
+                }
+            }
+        } else if (cmd[0] == 'skill' && cmd[1] != null) {
+            let skills = JSON.parse(fs.readFileSync('./main/skills.json', 'utf8'));
+            // TODO: How to handle upgraded skills
+            for (let i = 0; i< Object.keys(skills).length; i++) {    
+                if (cmd[1] + ' ' + cmd[2] == skills[i].fname || cmd[1] + ' ' + cmd[2] == skills[i].nick || cmd[1] == skills[i].fname || cmd[1] == skills[i].id ||  cmd[1] == skills[i].nick) {
+                    bot.sendMessage({
+                        to: channelID,
+                        message: 'Senpai, these are the skills of the servant you requested: \n'+'``` Name: ' +skills[i].fname+
+                                '\n\n Skill 1: ' +skills[i].skill1+
+                                '\n Description: ' +skills[i].skill1d+
+                                '\n\n Skill 2: ' +skills[i].skill2+
+                                '\n Description: ' +skills[i].skill2d+
+                                '\n\n Skill 3: ' +skills[i].skill3+
+                                '\n Description: ' +skills[i].skill3d+ '```' 
+                    });
+                    break;
                 }
             }
         } else if (cmd[0] == 'help') {
@@ -119,7 +137,8 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                 to: channelID,
                 message: '```Senpai, the following commands that I can understand are: \n !mashu al \n !mashu gf \n !mashu thanks '+
                 '\n !mashu fine \n !mashu gj \n !mashu hbd \n !mashu scold \n !mashu baka \n !mashu headpat '+
-                '\n !mashu servant (insert firstname/nickname/id) \n !mashu battle \n !mashu sad \n !mashu money```'
+                '\n !mashu servant (insert firstname/nickname/id) \n !mashu battle \n !mashu bad \n !mashu money'+
+                '\n !mashu skill (insert firstname/nickname/id)```'
             });
         } else {
             bot.sendMessage({

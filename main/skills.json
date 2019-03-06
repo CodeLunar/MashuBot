@@ -153,7 +153,7 @@
     },
     {
         "id": 10,
-        "name": "Chevalier",
+        "fname": "Chevalier",
         "nick": "d'Eon",
         "skill1": "Eye of the Mind (True) C",
         "skill1d": "Grants self Evasion for 1 turn. \n Increases own defense for 3 turns.",
