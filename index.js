@@ -57,7 +57,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
             bot.sendMessage({
                 to: channelID,
                 message: 'Happy Birthday senpai. This is cause for celebration!'+
-                'We should have the whole kingdom host a festival!'
+                ' We should have the whole kingdom host a festival!'
             });
         } else if (cmd[0] == 'scold') {
             bot.sendMessage({
