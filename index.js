@@ -138,7 +138,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                                             '\n\n Skill 3: ' +skills[i].skill3+
                                             '\n Description: ' +skills[i].skill3d+ 
                                             '\n\n Skill 3 (Upgraded): ' +skills[i].skill3a+
-                                            '\n\n Description: ' +skills[i].skill3ad+'```' 
+                                            '\n Description: ' +skills[i].skill3ad+'```' 
                                 });
                                 break;
                             }
@@ -171,7 +171,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                                         '\n\n Skill 3: ' +skills[i].skill3+
                                         '\n Description: ' +skills[i].skill3d+ 
                                         '\n\n Skill 3 (Upgraded): ' +skills[i].skill3a+
-                                        '\n\n Description: ' +skills[i].skill3ad+'```' 
+                                        '\n Description: ' +skills[i].skill3ad+'```' 
                             });
                             break;
                         } else {
@@ -206,7 +206,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                                         '\n\n Skill 3: ' +skills[i].skill3+
                                         '\n Description: ' +skills[i].skill3d+ 
                                         '\n\n Skill 3 (Upgraded): ' +skills[i].skill3a+
-                                        '\n\n Description: ' +skills[i].skill3ad+'```' 
+                                        '\n Description: ' +skills[i].skill3ad+'```' 
                             });
                             break;
                         }
@@ -235,7 +235,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                                     '\n\n Skill 3: ' +skills[i].skill3+
                                     '\n Description: ' +skills[i].skill3d+ 
                                     '\n\n Skill 3 (Upgraded): ' +skills[i].skill3a+
-                                    '\n\n Description: ' +skills[i].skill3ad+'```' 
+                                    '\n Description: ' +skills[i].skill3ad+'```' 
                         });
                         break;
                     } else {
