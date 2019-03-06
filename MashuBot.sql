@@ -36,7 +36,7 @@ values (3,'Artoria Pendragon (Alter)',4,'Saber','1(2 hits)','2(2 hits)','2(1 hit
 /
 
 insert into servant(id,name,rarity,class,quick,arts,buster,extra,cost,baseHP,baseATK,maxHP,maxATK,NP,alignment,gender)
-values (4,'Atoria Pendragon (Lily)',4,'Saber','1(2 hits)','2(2 hits)','2(1 hit)','1(3 hits)',12,1699,1287,10623,7726,
+values (4,'Artoria Pendragon (Lily)',4,'Saber','1(2 hits)','2(2 hits)','2(1 hit)','1(3 hits)',12,1699,1287,10623,7726,
 '(Buster) Caliburn','Lawful Good','Female');
 /
 
@@ -72,7 +72,7 @@ values (10,'Chevalier d''Eon',4,'Saber','1(2 hits)','2(2 hits)','2(1 hit)','1(3 
 
 insert into servant(id,name,rarity,class,quick,arts,buster,extra,cost,baseHP,baseATK,maxHP,maxATK,NP,alignment,gender)
 values (11,'EMIYA',4,'Archer','1(2 hits)','3(3 hits)','1(1 hit)','1(5 hits)',12,1843,1466,11521,9398,
-'(Buster) Unilimited Blade Works','True Neutral','Male');
+'(Buster) Unlimited Blade Works','True Neutral','Male');
 /
 
 insert into servant(id,name,rarity,class,quick,arts,buster,extra,cost,baseHP,baseATK,maxHP,maxATK,NP,alignment,gender)
