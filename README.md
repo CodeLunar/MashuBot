@@ -21,5 +21,6 @@ When you type the command, "!mashu help", it will display the following commands
  - !mashu battle
  - !mashu bad
  - !mashu money
+ - !mashu skill (insert firstname/nickname/id)
 
 (README will be updated as i make progress)
