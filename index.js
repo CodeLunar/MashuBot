@@ -26,7 +26,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
     // command starts with "!mashu"
     if (message.substring(0,6) == '!mashu') {
         var cmd = message.split(' ').splice(1).map(item => item.trim());
-        console.log(cmd);
+        console.log(user, cmd);
 
         if (cmd[0] == 'al') {
             bot.sendMessage({
@@ -119,17 +119,138 @@ bot.on('message', function (user, userID, channelID, message, evt) {
             // TODO: How to handle upgraded skills
             for (let i = 0; i< Object.keys(skills).length; i++) {    
                 if (cmd[1] + ' ' + cmd[2] == skills[i].fname || cmd[1] + ' ' + cmd[2] == skills[i].nick || cmd[1] == skills[i].fname || cmd[1] == skills[i].id ||  cmd[1] == skills[i].nick) {
-                    bot.sendMessage({
-                        to: channelID,
-                        message: 'Senpai, these are the skills of the servant you requested: \n'+'``` Name: ' +skills[i].fname+
-                                '\n\n Skill 1: ' +skills[i].skill1+
-                                '\n Description: ' +skills[i].skill1d+
-                                '\n\n Skill 2: ' +skills[i].skill2+
-                                '\n Description: ' +skills[i].skill2d+
-                                '\n\n Skill 3: ' +skills[i].skill3+
-                                '\n Description: ' +skills[i].skill3d+ '```' 
-                    });
-                    break;
+                    if (skills[i].hasOwnProperty('skill1a')) {
+                        // has upgraded skill 1
+                        if (skills[i].hasOwnProperty('skill2a')) {
+                            // has upgraded skill 2
+                            if (skills[i].hasOwnProperty('skill3a')){
+                                bot.sendMessage({
+                                    to: channelID,
+                                    message: 'Senpai, these are the skills of the servant you requested: \n'+'``` Name: ' +skills[i].fname+
+                                            '\n\n Skill 1: ' +skills[i].skill1+
+                                            '\n Description: ' +skills[i].skill1d+
+                                            '\n\n Skill 1 (Upgraded): ' +skills[i].skill1a+
+                                            '\n Description: ' +skills[i].skill1ad+
+                                            '\n\n Skill 2: ' +skills[i].skill2+
+                                            '\n Description: ' +skills[i].skill2d+
+                                            '\n\n Skill 2 (Upgraded): ' +skills[i].skill2a+
+                                            '\n Description: ' +skills[i].skill2ad+
+                                            '\n\n Skill 3: ' +skills[i].skill3+
+                                            '\n Description: ' +skills[i].skill3d+ 
+                                            '\n\n Skill 3 (Upgraded): ' +skills[i].skill3a+
+                                            '\n\n Description: ' +skills[i].skill3ad+'```' 
+                                });
+                                break;
+                            }
+                            bot.sendMessage({
+                                to: channelID,
+                                message: 'Senpai, these are the skills of the servant you requested: \n'+'``` Name: ' +skills[i].fname+
+                                        '\n\n Skill 1: ' +skills[i].skill1+
+                                        '\n Description: ' +skills[i].skill1d+
+                                        '\n\n Skill 1 (Upgraded): ' +skills[i].skill1a+
+                                        '\n Description: ' +skills[i].skill1ad+
+                                        '\n\n Skill 2: ' +skills[i].skill2+
+                                        '\n Description: ' +skills[i].skill2d+
+                                        '\n\n Skill 2 (Upgraded): ' +skills[i].skill2a+
+                                        '\n Description: ' +skills[i].skill2ad+
+                                        '\n\n Skill 3: ' +skills[i].skill3+
+                                        '\n Description: ' +skills[i].skill3d+ '```' 
+                            });
+                            break;
+                        } else if (skills[i].hasOwnProperty('skill3a')) {
+                            // has upgrade skill 3
+                            bot.sendMessage({
+                                to: channelID,
+                                message: 'Senpai, these are the skills of the servant you requested: \n'+'``` Name: ' +skills[i].fname+
+                                        '\n\n Skill 1: ' +skills[i].skill1+
+                                        '\n Description: ' +skills[i].skill1d+
+                                        '\n\n Skill 1 (Upgraded): ' +skills[i].skill1a+
+                                        '\n Description: ' +skills[i].skill1ad+
+                                        '\n\n Skill 2: ' +skills[i].skill2+
+                                        '\n Description: ' +skills[i].skill2d+                                        
+                                        '\n\n Skill 3: ' +skills[i].skill3+
+                                        '\n Description: ' +skills[i].skill3d+ 
+                                        '\n\n Skill 3 (Upgraded): ' +skills[i].skill3a+
+                                        '\n\n Description: ' +skills[i].skill3ad+'```' 
+                            });
+                            break;
+                        } else {
+                            bot.sendMessage({
+                                to: channelID,
+                                message: 'Senpai, these are the skills of the servant you requested: \n'+'``` Name: ' +skills[i].fname+
+                                        '\n\n Skill 1: ' +skills[i].skill1+
+                                        '\n Description: ' +skills[i].skill1d+
+                                        '\n\n Skill 1 (Upgraded): ' +skills[i].skill1a+
+                                        '\n Description: ' +skills[i].skill1ad+
+                                        '\n\n Skill 2: ' +skills[i].skill2+
+                                        '\n Description: ' +skills[i].skill2d+
+                                        '\n\n Skill 3: ' +skills[i].skill3+
+                                        '\n Description: ' +skills[i].skill3d+ '```' 
+                            });
+                            break;
+                        }
+                    } else if (skills[i].hasOwnProperty('skill2a')) {
+                        // Doesnt have upgraded skill 1 but has upgraded skill 2
+
+                        if (skills[i].hasOwnProperty('skill3a')) {
+                            // has upgraded skill 3
+                            bot.sendMessage({
+                                to: channelID,
+                                message: 'Senpai, these are the skills of the servant you requested: \n'+'``` Name: ' +skills[i].fname+
+                                        '\n\n Skill 1: ' +skills[i].skill1+
+                                        '\n Description: ' +skills[i].skill1d+
+                                        '\n\n Skill 2: ' +skills[i].skill2+
+                                        '\n Description: ' +skills[i].skill2d+
+                                        '\n\n Skill 2 (Upgraded): ' +skills[i].skill2a+
+                                        '\n Description: ' +skills[i].skill2ad+
+                                        '\n\n Skill 3: ' +skills[i].skill3+
+                                        '\n Description: ' +skills[i].skill3d+ 
+                                        '\n\n Skill 3 (Upgraded): ' +skills[i].skill3a+
+                                        '\n\n Description: ' +skills[i].skill3ad+'```' 
+                            });
+                            break;
+                        }
+                        bot.sendMessage({
+                            to: channelID,
+                            message: 'Senpai, these are the skills of the servant you requested: \n'+'``` Name: ' +skills[i].fname+
+                                    '\n\n Skill 1: ' +skills[i].skill1+
+                                    '\n Description: ' +skills[i].skill1d+
+                                    '\n\n Skill 2: ' +skills[i].skill2+
+                                    '\n Description: ' +skills[i].skill2d+
+                                    '\n\n Skill 2 (Upgraded): ' +skills[i].skill2a+
+                                    '\n Description: ' +skills[i].skill2ad+
+                                    '\n\n Skill 3: ' +skills[i].skill3+
+                                    '\n Description: ' +skills[i].skill3d+ '```' 
+                        });
+                        break;
+                    } else if (skills[i].hasOwnProperty('skill3a')) {
+                        // Doesnt have upgraded skill 1/2 but has upgraded skill 3
+                        bot.sendMessage({
+                            to: channelID,
+                            message: 'Senpai, these are the skills of the servant you requested: \n'+'``` Name: ' +skills[i].fname+
+                                    '\n\n Skill 1: ' +skills[i].skill1+
+                                    '\n Description: ' +skills[i].skill1d+
+                                    '\n\n Skill 2: ' +skills[i].skill2+
+                                    '\n Description: ' +skills[i].skill2d+
+                                    '\n\n Skill 3: ' +skills[i].skill3+
+                                    '\n Description: ' +skills[i].skill3d+ 
+                                    '\n\n Skill 3 (Upgraded): ' +skills[i].skill3a+
+                                    '\n\n Description: ' +skills[i].skill3ad+'```' 
+                        });
+                        break;
+                    } else {
+                        bot.sendMessage({
+                            to: channelID,
+                            message: 'Senpai, these are the skills of the servant you requested: \n'+'``` Name: ' +skills[i].fname+
+                                    '\n\n Skill 1: ' +skills[i].skill1+
+                                    '\n Description: ' +skills[i].skill1d+
+                                    '\n\n Skill 2: ' +skills[i].skill2+
+                                    '\n Description: ' +skills[i].skill2d+
+                                    '\n\n Skill 3: ' +skills[i].skill3+
+                                    '\n Description: ' +skills[i].skill3d+ '```' 
+                        });
+                        break;
+                    }
                 }
             }
         } else if (cmd[0] == 'help') {
