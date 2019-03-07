@@ -1441,8 +1441,8 @@
     },
     {
         "id": 40,
-        "fname": "Cursed Arm Hassan",
-        "lname": "",
+        "fname": "Cursed Arm",
+        "lname": "Hassan",
         "rarity": 2,
         "servantClass": "Assassin",
         "quick": "3(3 hits)",
