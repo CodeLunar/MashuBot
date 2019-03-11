@@ -128,17 +128,17 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                                     to: channelID,
                                     message: 'Senpai, these are the skills of the servant you requested: \n'+'``` Name: ' +skills[i].fname+
                                             '\n\n Skill 1: ' +skills[i].skill1+
-                                            '\n Description: ' +skills[i].skill1d+
+                                            '\n ' +skills[i].skill1d+
                                             '\n\n Skill 1 (Upgraded): ' +skills[i].skill1a+
-                                            '\n Description: ' +skills[i].skill1ad+
+                                            '\n ' +skills[i].skill1ad+
                                             '\n\n Skill 2: ' +skills[i].skill2+
-                                            '\n Description: ' +skills[i].skill2d+
+                                            '\n ' +skills[i].skill2d+
                                             '\n\n Skill 2 (Upgraded): ' +skills[i].skill2a+
-                                            '\n Description: ' +skills[i].skill2ad+
+                                            '\n ' +skills[i].skill2ad+
                                             '\n\n Skill 3: ' +skills[i].skill3+
-                                            '\n Description: ' +skills[i].skill3d+ 
+                                            '\n ' +skills[i].skill3d+ 
                                             '\n\n Skill 3 (Upgraded): ' +skills[i].skill3a+
-                                            '\n Description: ' +skills[i].skill3ad+'```' 
+                                            '\n ' +skills[i].skill3ad+'```' 
                                 });
                                 break;
                             }
@@ -146,15 +146,15 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                                 to: channelID,
                                 message: 'Senpai, these are the skills of the servant you requested: \n'+'``` Name: ' +skills[i].fname+
                                         '\n\n Skill 1: ' +skills[i].skill1+
-                                        '\n Description: ' +skills[i].skill1d+
+                                        '\n ' +skills[i].skill1d+
                                         '\n\n Skill 1 (Upgraded): ' +skills[i].skill1a+
-                                        '\n Description: ' +skills[i].skill1ad+
+                                        '\n ' +skills[i].skill1ad+
                                         '\n\n Skill 2: ' +skills[i].skill2+
-                                        '\n Description: ' +skills[i].skill2d+
+                                        '\n ' +skills[i].skill2d+
                                         '\n\n Skill 2 (Upgraded): ' +skills[i].skill2a+
-                                        '\n Description: ' +skills[i].skill2ad+
+                                        '\n ' +skills[i].skill2ad+
                                         '\n\n Skill 3: ' +skills[i].skill3+
-                                        '\n Description: ' +skills[i].skill3d+ '```' 
+                                        '\n ' +skills[i].skill3d+ '```' 
                             });
                             break;
                         } else if (skills[i].hasOwnProperty('skill3a')) {
@@ -163,15 +163,15 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                                 to: channelID,
                                 message: 'Senpai, these are the skills of the servant you requested: \n'+'``` Name: ' +skills[i].fname+
                                         '\n\n Skill 1: ' +skills[i].skill1+
-                                        '\n Description: ' +skills[i].skill1d+
+                                        '\n ' +skills[i].skill1d+
                                         '\n\n Skill 1 (Upgraded): ' +skills[i].skill1a+
-                                        '\n Description: ' +skills[i].skill1ad+
+                                        '\n ' +skills[i].skill1ad+
                                         '\n\n Skill 2: ' +skills[i].skill2+
-                                        '\n Description: ' +skills[i].skill2d+                                        
+                                        '\n ' +skills[i].skill2d+                                        
                                         '\n\n Skill 3: ' +skills[i].skill3+
-                                        '\n Description: ' +skills[i].skill3d+ 
+                                        '\n ' +skills[i].skill3d+ 
                                         '\n\n Skill 3 (Upgraded): ' +skills[i].skill3a+
-                                        '\n Description: ' +skills[i].skill3ad+'```' 
+                                        '\n ' +skills[i].skill3ad+'```' 
                             });
                             break;
                         } else {
@@ -179,13 +179,13 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                                 to: channelID,
                                 message: 'Senpai, these are the skills of the servant you requested: \n'+'``` Name: ' +skills[i].fname+
                                         '\n\n Skill 1: ' +skills[i].skill1+
-                                        '\n Description: ' +skills[i].skill1d+
+                                        '\n ' +skills[i].skill1d+
                                         '\n\n Skill 1 (Upgraded): ' +skills[i].skill1a+
-                                        '\n Description: ' +skills[i].skill1ad+
+                                        '\n ' +skills[i].skill1ad+
                                         '\n\n Skill 2: ' +skills[i].skill2+
-                                        '\n Description: ' +skills[i].skill2d+
+                                        '\n ' +skills[i].skill2d+
                                         '\n\n Skill 3: ' +skills[i].skill3+
-                                        '\n Description: ' +skills[i].skill3d+ '```' 
+                                        '\n ' +skills[i].skill3d+ '```' 
                             });
                             break;
                         }
@@ -198,15 +198,15 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                                 to: channelID,
                                 message: 'Senpai, these are the skills of the servant you requested: \n'+'``` Name: ' +skills[i].fname+
                                         '\n\n Skill 1: ' +skills[i].skill1+
-                                        '\n Description: ' +skills[i].skill1d+
+                                        '\n ' +skills[i].skill1d+
                                         '\n\n Skill 2: ' +skills[i].skill2+
-                                        '\n Description: ' +skills[i].skill2d+
+                                        '\n ' +skills[i].skill2d+
                                         '\n\n Skill 2 (Upgraded): ' +skills[i].skill2a+
-                                        '\n Description: ' +skills[i].skill2ad+
+                                        '\n ' +skills[i].skill2ad+
                                         '\n\n Skill 3: ' +skills[i].skill3+
-                                        '\n Description: ' +skills[i].skill3d+ 
+                                        '\n ' +skills[i].skill3d+ 
                                         '\n\n Skill 3 (Upgraded): ' +skills[i].skill3a+
-                                        '\n Description: ' +skills[i].skill3ad+'```' 
+                                        '\n ' +skills[i].skill3ad+'```' 
                             });
                             break;
                         }
@@ -214,13 +214,13 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                             to: channelID,
                             message: 'Senpai, these are the skills of the servant you requested: \n'+'``` Name: ' +skills[i].fname+
                                     '\n\n Skill 1: ' +skills[i].skill1+
-                                    '\n Description: ' +skills[i].skill1d+
+                                    '\n ' +skills[i].skill1d+
                                     '\n\n Skill 2: ' +skills[i].skill2+
-                                    '\n Description: ' +skills[i].skill2d+
+                                    '\n ' +skills[i].skill2d+
                                     '\n\n Skill 2 (Upgraded): ' +skills[i].skill2a+
-                                    '\n Description: ' +skills[i].skill2ad+
+                                    '\n ' +skills[i].skill2ad+
                                     '\n\n Skill 3: ' +skills[i].skill3+
-                                    '\n Description: ' +skills[i].skill3d+ '```' 
+                                    '\n ' +skills[i].skill3d+ '```' 
                         });
                         break;
                     } else if (skills[i].hasOwnProperty('skill3a')) {
@@ -229,13 +229,13 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                             to: channelID,
                             message: 'Senpai, these are the skills of the servant you requested: \n'+'``` Name: ' +skills[i].fname+
                                     '\n\n Skill 1: ' +skills[i].skill1+
-                                    '\n Description: ' +skills[i].skill1d+
+                                    '\n ' +skills[i].skill1d+
                                     '\n\n Skill 2: ' +skills[i].skill2+
-                                    '\n Description: ' +skills[i].skill2d+
+                                    '\n ' +skills[i].skill2d+
                                     '\n\n Skill 3: ' +skills[i].skill3+
-                                    '\n Description: ' +skills[i].skill3d+ 
+                                    '\n ' +skills[i].skill3d+ 
                                     '\n\n Skill 3 (Upgraded): ' +skills[i].skill3a+
-                                    '\n Description: ' +skills[i].skill3ad+'```' 
+                                    '\n ' +skills[i].skill3ad+'```' 
                         });
                         break;
                     } else {
@@ -243,11 +243,11 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                             to: channelID,
                             message: 'Senpai, these are the skills of the servant you requested: \n'+'``` Name: ' +skills[i].fname+
                                     '\n\n Skill 1: ' +skills[i].skill1+
-                                    '\n Description: ' +skills[i].skill1d+
+                                    '\n ' +skills[i].skill1d+
                                     '\n\n Skill 2: ' +skills[i].skill2+
-                                    '\n Description: ' +skills[i].skill2d+
+                                    '\n ' +skills[i].skill2d+
                                     '\n\n Skill 3: ' +skills[i].skill3+
-                                    '\n Description: ' +skills[i].skill3d+ '```' 
+                                    '\n ' +skills[i].skill3d+ '```' 
                         });
                         break;
                     }
