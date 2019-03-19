@@ -82,7 +82,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
         } else if (cmd[0] == 'money') {
             bot.sendMessage({
                 to: channelID,
-                message: 'Ka-ching, ka-ching...Huh!? I\'m fine. I wasn\'t playing with valuable resources. I swear,'
+                message: 'Ka-ching, ka-ching...Huh!? I\'m fine. I wasn\'t playing with valuable resources. I swear.'
             })
         } else if (cmd[0] == 'battle') {
             bot.sendMessage({
