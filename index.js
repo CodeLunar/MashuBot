@@ -126,8 +126,8 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                             if (skills[i].hasOwnProperty('skill3a')){
                                 bot.sendMessage({
                                     to: channelID,
-                                    message: 'Senpai, these are the skills of the servant you requested: \n'+'``` Name: ' +skills[i].fname+
-                                            '\n\n Skill 1: ' +skills[i].skill1+
+                                    message: 'Senpai, these are the skills of the servant you requested: '+
+                                            '``` Skill 1: ' +skills[i].skill1+
                                             '\n ' +skills[i].skill1d+
                                             '\n\n Skill 1 (Upgraded): ' +skills[i].skill1a+
                                             '\n ' +skills[i].skill1ad+
@@ -144,8 +144,8 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                             }
                             bot.sendMessage({
                                 to: channelID,
-                                message: 'Senpai, these are the skills of the servant you requested: \n'+'``` Name: ' +skills[i].fname+
-                                        '\n\n Skill 1: ' +skills[i].skill1+
+                                message: 'Senpai, these are the skills of the servant you requested: '+
+                                        '``` Skill 1: ' +skills[i].skill1+
                                         '\n ' +skills[i].skill1d+
                                         '\n\n Skill 1 (Upgraded): ' +skills[i].skill1a+
                                         '\n ' +skills[i].skill1ad+
@@ -161,8 +161,8 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                             // has upgrade skill 3
                             bot.sendMessage({
                                 to: channelID,
-                                message: 'Senpai, these are the skills of the servant you requested: \n'+'``` Name: ' +skills[i].fname+
-                                        '\n\n Skill 1: ' +skills[i].skill1+
+                                message: 'Senpai, these are the skills of the servant you requested: '+
+                                        '``` Skill 1: ' +skills[i].skill1+
                                         '\n ' +skills[i].skill1d+
                                         '\n\n Skill 1 (Upgraded): ' +skills[i].skill1a+
                                         '\n ' +skills[i].skill1ad+
@@ -177,8 +177,8 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                         } else {
                             bot.sendMessage({
                                 to: channelID,
-                                message: 'Senpai, these are the skills of the servant you requested: \n'+'``` Name: ' +skills[i].fname+
-                                        '\n\n Skill 1: ' +skills[i].skill1+
+                                message: 'Senpai, these are the skills of the servant you requested: '+
+                                        '``` Skill 1: ' +skills[i].skill1+
                                         '\n ' +skills[i].skill1d+
                                         '\n\n Skill 1 (Upgraded): ' +skills[i].skill1a+
                                         '\n ' +skills[i].skill1ad+
@@ -196,8 +196,8 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                             // has upgraded skill 3
                             bot.sendMessage({
                                 to: channelID,
-                                message: 'Senpai, these are the skills of the servant you requested: \n'+'``` Name: ' +skills[i].fname+
-                                        '\n\n Skill 1: ' +skills[i].skill1+
+                                message: 'Senpai, these are the skills of the servant you requested: '+
+                                        '``` Skill 1: ' +skills[i].skill1+
                                         '\n ' +skills[i].skill1d+
                                         '\n\n Skill 2: ' +skills[i].skill2+
                                         '\n ' +skills[i].skill2d+
@@ -212,8 +212,8 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                         }
                         bot.sendMessage({
                             to: channelID,
-                            message: 'Senpai, these are the skills of the servant you requested: \n'+'``` Name: ' +skills[i].fname+
-                                    '\n\n Skill 1: ' +skills[i].skill1+
+                            message: 'Senpai, these are the skills of the servant you requested: '+
+                                    '``` Skill 1: ' +skills[i].skill1+
                                     '\n ' +skills[i].skill1d+
                                     '\n\n Skill 2: ' +skills[i].skill2+
                                     '\n ' +skills[i].skill2d+
@@ -227,8 +227,8 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                         // Doesnt have upgraded skill 1/2 but has upgraded skill 3
                         bot.sendMessage({
                             to: channelID,
-                            message: 'Senpai, these are the skills of the servant you requested: \n'+'``` Name: ' +skills[i].fname+
-                                    '\n\n Skill 1: ' +skills[i].skill1+
+                            message: 'Senpai, these are the skills of the servant you requested: '+
+                                    '``` Skill 1: ' +skills[i].skill1+
                                     '\n ' +skills[i].skill1d+
                                     '\n\n Skill 2: ' +skills[i].skill2+
                                     '\n ' +skills[i].skill2d+
@@ -241,8 +241,8 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                     } else {
                         bot.sendMessage({
                             to: channelID,
-                            message: 'Senpai, these are the skills of the servant you requested: \n'+'``` Name: ' +skills[i].fname+
-                                    '\n\n Skill 1: ' +skills[i].skill1+
+                            message: 'Senpai, these are the skills of the servant you requested: '+
+                                    '``` Skill 1: ' +skills[i].skill1+
                                     '\n ' +skills[i].skill1d+
                                     '\n\n Skill 2: ' +skills[i].skill2+
                                     '\n ' +skills[i].skill2d+
