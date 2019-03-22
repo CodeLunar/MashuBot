@@ -2137,7 +2137,7 @@
         "alignment": "True Neutral",
         "gender": "Female",
         "np": "(Arts) Nursery Rhyme",
-        "nick": ""
+        "nick": "Alice"
     },
     {
         "id": 75,
@@ -2157,7 +2157,7 @@
         "alignment": "Chaotic Evil",
         "gender": "Female",
         "np": "(Quick) Maria the Ripper",
-        "nick": "jtr"
+        "nick": "JTR"
     },
     {
         "id": 76,
@@ -2261,7 +2261,7 @@
     },
     {
         "id": 81,
-        "fname": "Hery",
+        "fname": "Henry",
         "lname": "Jekyll & Hyde",
         "rarity": 3,
         "servantClass": "Assassin/Berserker",
@@ -2417,7 +2417,7 @@
         "alignment": "Neutral Good",
         "gender": "Female",
         "np": "(Buster) Bryndildr Romantia",
-        "nick": ""
+        "nick": "Bryn"
     },
     {
         "id": 89,
