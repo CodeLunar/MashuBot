@@ -2,8 +2,9 @@
 
 This is my attempt in making a Discord bot as a learning experience. MashuBot will be Fate Grand Order related.
 
-Node_modules and auth.json are in the .gitignore.
-auth.json has the bot token
+Node_modules and auth.json are not included.
+
+auth.json has the credentials.
 
 ## Commands
 
@@ -23,4 +24,4 @@ When you type the command, "!mashu help", it will display the following commands
  - !mashu money
  - !mashu skill (insert firstname/nickname/id)
 
-(README will be updated as i make progress)
+(README will be updated as I make progress)
