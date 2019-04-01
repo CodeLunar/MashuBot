@@ -2216,7 +2216,7 @@
         "alignment": "Chaotic Good",
         "gender": "Female",
         "np": "(Arts) Song of Grail",
-        "nick": ""
+        "nick": "Iri"
     },
     {
         "id": 112,
@@ -2320,7 +2320,7 @@
     },
     {
         "id": 117,
-        "fname": "Fouma",
+        "fname": "Fuuma",
         "lname": "Kotarou",
         "rarity": 3,
         "servantClass": "Assassin",
