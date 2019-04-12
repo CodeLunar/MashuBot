@@ -116,7 +116,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
             }
         } else if (cmd[0] == 'skill' && cmd[1] != null) {
             let skills = JSON.parse(fs.readFileSync('./main/skills.json', 'utf8'));
-            // TODO: How to handle upgraded skills
+            
             for (let i = 0; i< Object.keys(skills).length; i++) {    
                 if (cmd[1] + ' ' + cmd[2] + ' ' + cmd[3] == skills[i].fname || cmd[1] + ' ' + cmd[2] + ' ' + cmd[3] == skills[i].nick || cmd[1] + ' ' + cmd[2] == skills[i].fname || cmd[1] + ' ' + cmd[2] == skills[i].nick || cmd[1] == skills[i].fname || cmd[1] == skills[i].id ||  cmd[1] == skills[i].nick) {
                     if (skills[i].hasOwnProperty('skill1a')) {
