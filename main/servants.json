@@ -181,7 +181,7 @@
     },
     {
         "id": 10,
-        "name": "Chevalier",
+        "fname": "Chevalier",
         "lname": "d'Eon",
         "rarity": 4,
         "servantClass": "Saber",
